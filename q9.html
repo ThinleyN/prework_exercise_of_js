@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> q9 </title>
+</head>
+<body>
+	<script>
+		function sortArray(input) {
+			var a;
+			for (var i = 0; i < input.length; ++i) 
+        {
+ 
+            for (var j = i + 1; j < input.length; ++j)
+            {
+ 
+                if (input[i] > input[j]) 
+                {
+ 
+                    a =  input[i];
+                    input[i] = input[j];
+                    input[j] = a;
+ 
+                }
+ 
+            }
+ 
+        }
+       		for (var p =0 ; p < input.length; p++) {
+      			console.log(input[p]);
+
+			}
+		}
+		console.log(sortArray([4,2,1,6,9,7]));
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> q14 </title>
+</head>
+<body>
+	<script>
+		function humanread(input) {
+			var last = input.toString().split('').pop();
+			if (last === '1') {
+				console.log(input+"st");
+			}
+			else if(last === '2'){
+				console.log(input+"nd");
+			}
+			else if(last === '3'){
+				console.log(input+"rd");
+			}
+			else {
+				console.log(input+"th");
+			}
+		}
+		console.log(humanread(1));
+		console.log(humanread(8));
+		console.log(humanread(301));
+		console.log(humanread(402));
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> q16 </title>
+</head>
+<body>
+	<button onclick="numbers.forEach(eachfor)">For Each</button>
+	<button onclick="mapp()">Map</button>
+	<button onclick="filterr()">Filter</button>
+	<button onclick="find()">Find</button>
+	<button onclick="some()">Some</button>
+	<button onclick="every()">Every</button>
+	<p id="print"></p>
+	<script>
+			printP = document.getElementById("print");
+			var numbers = [5, 10, 4, 6];
+
+			function eachfor(item, index) {
+			printP.innerHTML = printP.innerHTML + "items are " + item + "<br>"; 
+			}
+			function mapp(){
+				console.log(numbers.map(Math.sqrt));
+				printP.innerHTML = printP.innerHTML + numbers.map(Math.sqrt);
+			}
+			function check(numbers) {
+    			return numbers >= 4;
+			}
+			function sum(total, num) {
+    			return total + num ;
+			}
+
+			function filterr() {
+   			document.getElementById("print").innerHTML = numbers.filter(check);
+			}
+			function find() {
+    		document.getElementById("print").innerHTML = numbers.find(check);
+    		}
+    		function some() {
+    		document.getElementById("print").innerHTML = numbers.some(check);
+    		}
+    		function every() {
+    		document.getElementById("print").innerHTML = numbers.every(check);
+    		}
+    		
+
+	</script>
+
+</body>
+</html>

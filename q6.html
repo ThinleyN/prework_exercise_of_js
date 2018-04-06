@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> q6 </title>
+</head>
+<body>
+	<script>
+		function starts() {
+			var num = prompt("how many countries do you want to enter");
+			var country = [];
+			var longest= '';
+			var long = 0 ;
+			for (var i = 0; i<num; i++) {
+				a = prompt("Enter countries name");
+				country.push(a);
+
+			}
+			for (var j =0; j < num  ; j++) {
+					if ((country[j].length) > long){
+					long = country[j].length;
+
+        			longest= country[j];
+        			}
+        	} 
+				
+				console.log("The longest is "+ longest);
+		}
+		console.log(starts());
+
+	</script>
+
+</body>
+</html>

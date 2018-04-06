@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> q1 </title>
+</head>
+<body>
+	<button type="button" onclick="myreverse();"> 1234 reverse </button>
+
+	<script>
+		function myreverse() {
+		var x =1234;
+		var rem=0;
+		var rev=0;
+		while(x>0){
+			
+			rem = x % 10;
+			rev = rev * 10 + rem;
+			x = x / 10;
+			x = Math.round(x);
+		}
+		document.write(rev); 
+	}
+
+		
+	</script>
+
+</body>
+</html>

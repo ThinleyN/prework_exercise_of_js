@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> q11 </title>
+</head>
+<body>
+	<script>
+		function union(array1, array2) {
+ 			var obj = {};
+ 
+  			for (var i = array1.length-1; i >= 0; -- i)
+     			obj[array1[i]] = array1[i];
+ 
+			for (var i = array2.length-1; i >= 0; -- i)
+     			obj[array2[i]] = array2[i];
+ 
+  			var res = [];
+ 
+  			for (var n in obj)
+  			{
+  
+    			if (obj.hasOwnProperty(n)) 
+      			res.push(obj[n]);
+  			}	
+ 
+  			return res;
+			}
+			console.log(union([1, 2, 3], [100, 2, 1, 10]));
+	</script>
+
+</body>
+</html>
